@@ -1,1 +1,130 @@
 /* CSS stillerinizi buraya girin */
+/* *{border: 3px solid rgb(255, 20, 0, 0.5);
+background-color: rgb(0, 255, 0, 0.5);
+} */
+body{
+    margin:0;
+    padding:0;
+}
+header{
+    background: rgb(52,129,139);
+    background: linear-gradient(180deg, rgba(52,129,139,1) 0%, rgba(251,252,252,1) 73%);
+}
+
+h1{
+    display:block;
+    font-family:fantasy;
+    font-size:2.5rem;
+    font-weight:bold;
+    margin-top: 0;
+    padding-top: 40px;
+    margin:0 50px;
+
+}
+header nav{
+    margin: 15px 50px;
+}
+header nav a{
+    padding:10px 50px;
+    background: rgb(5,78,87);
+background: linear-gradient(0deg, rgba(5,78,87,1) 0%, rgba(0,212,255,1) 68%);
+    color:midnightblue;
+    font-family: fantasy;
+    font-size:2rem;
+    font-weight:bold;
+    justify-content:flex-start;
+    text-decoration: none;
+    width:5%;
+    border:1px solid darkblue;
+    border-radius:7%   
+}
+
+.container{
+    display:flex;
+    margin:auto;
+}
+.image-container{
+    margin-left: 100px;
+    width:40%;
+    padding:40%;
+}
+.image-container img{
+    width:30vw;
+    height:50vh;
+    border-radius:7%;
+    object-fit:cover;
+    object-position:center;
+
+}
+a{
+padding:7px 25px;
+    background: rgb(5,78,87);
+background: linear-gradient(0deg, rgba(5,78,87,1) 0%, rgba(0,212,255,1) 68%);
+    color:midnightblue;
+    font-family: fantasy;
+    font-size:2rem;
+    font-weight:bold;
+    text-decoration: none;
+    width:7%;
+    border:1px solid darkblue;
+    border-radius:7%;
+    
+}
+.intro-container{
+    margin:auto;
+    width:60%;
+    vertical-align:middle;
+    font-family:monospace;
+    font-size:1.8rem;
+    text-align:center;
+
+}
+.intro-container h2{
+    margin:30px auto;
+}
+
+.calismalarim{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    width:95%;
+    margin: 30px auto;
+    
+}
+.calismalarim-detail{
+  flex-grow:1;
+  flex-basis:200px;  
+}
+
+.calismalarim img{
+    border-radius:5%;
+    width:22vw;
+    margin:auto;
+}
+.calismalarim p{
+    text-align:center;
+    font-family:monospace;
+    font-size:2rem;
+    font-weight: bold;
+    color:darkblue;
+    margin-top:5px;
+}
+footer{
+    background: rgb(52,129,139);
+background: linear-gradient(0deg, rgba(52,129,139,1) 0%, rgba(251,252,252,1) 73%);
+
+
+}
+footer p{
+    font-size:2rem;
+    color:midnightblue;
+    font-family:monospace;
+    font-size:2rem;
+    text-align:center;
+    vertical-align: middle;
+    
+}
+.bana-ulas{
+    display:flex;
+    justify-content:center;
+}

@@ -1,130 +1,199 @@
 /* CSS stillerinizi buraya girin */
 /* *{border: 3px solid rgb(255, 20, 0, 0.5);
-background-color: rgb(0, 255, 0, 0.5);
-} */
-body{
-    margin:0;
-    padding:0;
+background-color: rgb(0, 255, 0, 0.5); */
+* {
+  box-sizing: border-box;
 }
-header{
-    background: rgb(52,129,139);
-    background: linear-gradient(180deg, rgba(52,129,139,1) 0%, rgba(251,252,252,1) 73%);
+body {
+  margin: 0;
+  padding: 0;
 }
-
-h1{
-    display:block;
-    font-family:fantasy;
-    font-size:2.5rem;
-    font-weight:bold;
-    margin-top: 0;
-    padding-top: 40px;
-    margin:0 50px;
-
-}
-header nav{
-    margin: 15px 50px;
-}
-header nav a{
-    padding:10px 50px;
-    background: rgb(5,78,87);
-background: linear-gradient(0deg, rgba(5,78,87,1) 0%, rgba(0,212,255,1) 68%);
-    color:midnightblue;
-    font-family: fantasy;
-    font-size:2rem;
-    font-weight:bold;
-    justify-content:flex-start;
-    text-decoration: none;
-    width:5%;
-    border:1px solid darkblue;
-    border-radius:7%   
+header {
+  background: rgb(52, 129, 139);
+  background: linear-gradient(
+    180deg,
+    rgba(52, 129, 139, 1) 0%,
+    rgba(251, 252, 252, 1) 73%
+  );
 }
 
-.container{
-    display:flex;
-    margin:auto;
+h1 {
+  display: block;
+  font-family: fantasy;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 0;
+  padding-top: 40px;
+  margin: 0 50px;
 }
-.image-container{
-    margin-left: 100px;
-    width:40%;
-    padding:40%;
+header nav {
+  margin: 15px 50px;
 }
-.image-container img{
-    width:30vw;
-    height:50vh;
-    border-radius:7%;
-    object-fit:cover;
-    object-position:center;
-
-}
-a{
-padding:7px 25px;
-    background: rgb(5,78,87);
-background: linear-gradient(0deg, rgba(5,78,87,1) 0%, rgba(0,212,255,1) 68%);
-    color:midnightblue;
-    font-family: fantasy;
-    font-size:2rem;
-    font-weight:bold;
-    text-decoration: none;
-    width:7%;
-    border:1px solid darkblue;
-    border-radius:7%;
-    
-}
-.intro-container{
-    margin:auto;
-    width:60%;
-    vertical-align:middle;
-    font-family:monospace;
-    font-size:1.8rem;
-    text-align:center;
-
-}
-.intro-container h2{
-    margin:30px auto;
+header nav a {
+  padding: 7px 40px;
+  background: rgb(5, 78, 87);
+  background: linear-gradient(
+    0deg,
+    rgba(5, 78, 87, 1) 0%,
+    rgba(0, 212, 255, 1) 68%
+  );
+  color: midnightblue;
+  font-family: fantasy;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid darkblue;
+  border-radius: 7%;
 }
 
-.calismalarim{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    width:95%;
-    margin: 30px auto;
-    
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
-.calismalarim-detail{
-  flex-grow:1;
-  flex-basis:200px;  
+.image-container {
+  margin: 50px;
+  padding: 0;
+  vertical-align: center;
+  width: 30%;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7%;
+  object-fit: cover;
+  object-position: center;
+}
+.buton,
+.bana-ulas {
+  padding: 7px 20px;
+  background: rgb(5, 78, 87);
+  background: linear-gradient(
+    0deg,
+    rgba(5, 78, 87, 1) 0%,
+    rgba(0, 212, 255, 1) 68%
+  );
+  color: midnightblue;
+  font-family: fantasy;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid darkblue;
+  border-radius: 7%;
+  margin: auto;
+  width: 200px;
+  text-align: center;
+}
+a:hover,
+.buton:hover,
+.bana-ulas:hover {
+  background-color: bisque;
 }
 
-.calismalarim img{
-    border-radius:5%;
-    width:22vw;
-    margin:auto;
+.intro-container {
+  margin: auto;
+  width: 60%;
+  vertical-align: middle;
+  font-family: monospace;
+  font-size: 1.8rem;
+  text-align: center;
+  flex-direction: column;
 }
-.calismalarim p{
-    text-align:center;
-    font-family:monospace;
-    font-size:2rem;
-    font-weight: bold;
-    color:darkblue;
-    margin-top:5px;
+.intro-container h2 {
+  margin: 30px auto;
 }
-footer{
-    background: rgb(52,129,139);
-background: linear-gradient(0deg, rgba(52,129,139,1) 0%, rgba(251,252,252,1) 73%);
 
+.calismalarim {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+  gap: 20px;
+}
+.calismalarim-detail {
+  flex-grow: 1;
+  flex-basis: 200px;
+}
 
+.calismalarim img {
+  border-radius: 5%;
+  width: 100%;
+  margin: 50px;
 }
-footer p{
-    font-size:2rem;
-    color:midnightblue;
-    font-family:monospace;
-    font-size:2rem;
-    text-align:center;
-    vertical-align: middle;
-    
+.calismalarim p {
+  text-align: center;
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  color: darkblue;
+  margin-top: 5px auto;
 }
-.bana-ulas{
-    display:flex;
-    justify-content:center;
+footer {
+  background: rgb(52, 129, 139);
+  background: linear-gradient(
+    0deg,
+    rgba(52, 129, 139, 1) 0%,
+    rgba(251, 252, 252, 1) 73%
+  );
+}
+footer p {
+  font-size: 2rem;
+  color: midnightblue;
+  font-family: monospace;
+  font-size: 2rem;
+  text-align: center;
+  vertical-align: middle;
+}
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 200px;
+  }
+  .intro-container,
+  .image-container,
+  .calismalarim,
+  .calismalarim img {
+    width: 100%;
+    margin: auto;
+  }
+  .image-container {
+    margin: 10px;
+  }
+  .calismalarim {
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+  .calismalarim-detail {
+    flex-basis: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 200px;
+  }
+
+  .intro-container,
+  .image-container,
+  .calismalarim,
+  .calismalarim img {
+    width: 100%;
+    margin: auto;
+  }
+  .image-container {
+    margin: 10px;
+  }
+  .calismalarim {
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+  .calismalarim-detail {
+    flex-basis: 150px;
+  }
 }
